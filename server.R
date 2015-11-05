@@ -6,7 +6,7 @@ script <- getURL(u, ssl.verifypeer = FALSE)
 eval(parse(text = script))
 load("data/dados.RData",envir=.GlobalEnv)
 shinyServer(function(input, output, session) {
-
+  #teste
   # Combine the selected variables into a new data frame
   dadorate <- reactive({
     Rate3[,c("State",input$cancer)]
